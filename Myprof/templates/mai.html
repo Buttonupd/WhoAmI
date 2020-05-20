@@ -1,4 +1,5 @@
 {% load static %}
+{% load bootstrap4 %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio webpage">
-	<meta name="author" content="Vladislav Moroshan">
+	<meta name="author" content="Dan Kariuki">
 
 	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -25,14 +26,14 @@
 	<title>Web Developer</title>
 
 	<!-- CSS -->
-	<link href="{% static 'mainpage/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
-	<link href="{% static 'mainpage/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
-	<link href="{% static 'mainpage/css/animate.css" rel="stylesheet' %}">
+	<link href="{% static 'Myprof/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'Myprof/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'Myprof/css/animate.css" rel="stylesheet' %}">
 
 	<!-- Custom styles CSS -->
-	<link href="{% static 'mainpage/css/style.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'Myprof/css/style.css' %}" rel="stylesheet" media="screen">
 
-    <script src="{% static 'mainpage/js/modernizr.custom.js' %}"></script>
+    <script src="{% static 'Myprof/js/modernizr.custom.js' %}"></script>
 
 </head>
 <body>
@@ -48,7 +49,7 @@
 	<section id="home" class="pfblock-image screen-height">
     <div class="home-overlay"></div>
 		<div class="intro">
-			<div class="start">Hello, my name is Vlad Moroshan and I am</div>
+			<div class="start">Hello, my name is Dan Kariuki and I am</div>
 			<h1>Full-Stack Web Developer</h1>
 			<div class="start">creating modern and responsive Web Application</div>
 		</div>
@@ -79,7 +80,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Vlad Moroshan</a>
+					<a class="navbar-brand" href="index.html">Dan Kariuki</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
@@ -116,14 +117,14 @@
 							<p>Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.</p>
 							<p>I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.</p>
 
- 							<a href="https://drive.google.com/file/d/0B4mqctkjXG0iclRXd2JJMGtYZFE/view?usp=sharing" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a>
+ 							<!-- <a href="https://drive.google.com/file/d/0B4mqctkjXG0iclRXd2JJMGtYZFE/view?usp=sharing" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a> -->
 						</div>
 					</div>
 				</div>
 
 				<div class="col-sm-4">
 					<div class="pfblock-header wow fadeInUp">
-						<img id="myphoto" src="{% static 'mainpage/images/me.jpg' %}" alt="Vladislav Moroshan" style="border-radius: 100%;filter:grayscale(30%);">
+						<img id="myphoto" src="{% static 'Myprof/images/me.jpg' %}" alt="VDan Kariuki" style="border-radius: 100%;filter:grayscale(30%);">
 					</div>
 				</div>
 		</div><!-- .container -->
@@ -180,7 +181,7 @@
 							<div class="grid wow zoomIn">
 
 								<figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
-									{% with 'mainpage/images/'|add:project.img_name as image_static %}
+									{% with 'Myprof/images/'|add:project.img_name as image_static %}
 											<img class="card-img-top" src="{% static image_static %}"></a>
 									{% endwith %}
 								</figure>
@@ -253,7 +254,7 @@
 		<div class="row">
 
 			<div class="col-sm-6 col-sm-offset-3">
-				{% include 'mainpage/contact_form.html' %}
+				{% include 'Myprof/contact_form.html' %}
 			</div><!-- .row -->
 
 		</div><!-- .container -->
@@ -270,15 +271,15 @@
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<li><a href="https://www.linkedin.com/in/vlad-moroshan-266229129?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/VladislavMoroshan" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="mailto:vlad.moroshan@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
-						<li><a href="skype:moroshan777?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/Dan Kabungo-266229129?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/Buttonupd" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="mailto:Dankariuki0101@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
+						<!-- <li><a href="skype:moroshan777?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li> -->
 					</ul>
 
 					<p class="copyright"> Feel free to email me, or visit my GitHub and LinkedIn pages.</p>
 
-					<p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> Ukraine 2017 ©</p>
+					<p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> Kenya 2020 ©</p>
 
 				</div>
 
@@ -291,16 +292,16 @@
 
 	<!-- Javascript files -->
 
-	<script src="{% static 'mainpage/js/jquery-1.11.1.min.js' %}"></script>
-	<script src="{% static 'mainpage/bootstrap/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'mainpage/js/jquery.parallax-1.1.3.js' %}"></script>
-	<script src="{% static 'mainpage/js/imagesloaded.pkgd.js' %}"></script>
-	<script src="{% static 'mainpage/js/jquery.sticky.js' %}"></script>
-	<script src="{% static 'mainpage/js/smoothscroll.js' %}"></script>
-	<script src="{% static 'mainpage/js/wow.min.js' %}"></script>
-  <script src="{% static 'mainpage/js/waypoints.min.js' %}"></script>
-  <script src="{% static 'mainpage/js/jquery.cbpQTRotator.js' %}"></script>
-	<script src="{% static 'mainpage/js/custom.js' %}"></script>
+	<script src="{% static 'Myprof/js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'Myprof/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'Myprof/js/jquery.parallax-1.1.3.js' %}"></script>
+	<script src="{% static 'Myprof/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'Myprof/js/jquery.sticky.js' %}"></script>
+	<script src="{% static 'Myprof/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'Myprof/js/wow.min.js' %}"></script>
+  <script src="{% static 'Myprof/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'Myprof/js/jquery.cbpQTRotator.js' %}"></script>
+	<script src="{% static 'Myprof/js/custom.js' %}"></script>
 
 </body>
 </html>
