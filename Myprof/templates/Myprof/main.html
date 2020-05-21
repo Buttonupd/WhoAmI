@@ -1,6 +1,5 @@
-{% load static %}
-{% load bootstrap4 %}
 
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,18 +21,24 @@
 	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-	<link rel="shortcut icon" href="{% static 'mainpage/images/logo.ico' %}" />
-	<title>Web Developer</title>
+	<link rel="shortcut icon" href="{% static 'Myprof/images/logo.ico' %}" />
+	<title>Let's Develop </title>
 
 	<!-- CSS -->
 	<link href="{% static 'Myprof/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
 	<link href="{% static 'Myprof/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
-	<link href="{% static 'Myprof/css/animate.css" rel="stylesheet' %}">
-
+	<link href="{% static 'Myprof/css/fontawesome.css" rel="stylesheet' %}">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.woff2">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.eot">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.eot">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.woff2">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.ttf">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.woff">
 	<!-- Custom styles CSS -->
 	<link href="{% static 'Myprof/css/style.css' %}" rel="stylesheet" media="screen">
 
-    <script src="{% static 'Myprof/js/modernizr.custom.js' %}"></script>
+    <script src="{% static 'Myprof/js/all.min.js' %}"></script>
 
 </head>
 <body>
@@ -48,7 +53,8 @@
 
 	<section id="home" class="pfblock-image screen-height">
     <div class="home-overlay"></div>
-		<div class="intro">
+		<div class="intro" >
+			<img src=>
 			<div class="start">Hello, my name is Dan Kariuki and I am</div>
 			<h1>Full-Stack Web Developer</h1>
 			<div class="start">creating modern and responsive Web Application</div>
@@ -87,12 +93,12 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#services">About me</a></li>
-            <li><a href="#portfolio">Works</a></li>
+            			<li><a href="#portfolio">Works</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 
-			</div><!-- .container -->
+			</div>
 
 		</nav>
 
@@ -124,7 +130,7 @@
 
 				<div class="col-sm-4">
 					<div class="pfblock-header wow fadeInUp">
-						<img id="myphoto" src="{% static 'Myprof/images/me.jpg' %}" alt="VDan Kariuki" style="border-radius: 100%;filter:grayscale(30%);">
+						<img id="myphoto" src="{% static 'Myprof/images/mann.jpg' %}" alt="Dan Kariuki" style="border-radius: 75%;filter:grayscale(30%);" width="150%" height="150%">
 					</div>
 				</div>
 		</div><!-- .container -->
@@ -139,13 +145,21 @@
 					<div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
 					<div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
 					<div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
+					
 				</div>
 				<div class="row">
-					<div  class="devicon-d3js-plain  col-xs-15"><span>D3</span></div>
-					<div  class="devicon-react-original  col-xs-15"><span>REACT</span></div>
-					<div  class="devicon-nodejs-plain  col-xs-15"><span>NODE</span></div>
+					<div  class="devicon-nodejs-plain  col-xs-15"><span>NODEJS</span></div>
 					<div  class="devicon-python-plain  col-xs-15"><span>PYTHON</span></div>
 					<div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
+					<div  class="devicon-python-plain  col-xs-15"><span>FLASK</span></div>
+					
+					
+				</div>
+				<div class="row">
+					<div  class="devicon-python-plain  col-xs-15"><span>MACHINE LEARNING</span></div>
+					<div  class="devicon-postgresql-plain  col-xs-15"><span>SQL/DATABASES</span></div>
+					<div  class="devicon-javascript-plain  col-xs-15"><span>ANGULARJS</span></div>
+					<div  class="devicon-javascript-plain  col-xs-15"><span>TYPESCRIPT</span></div>
 				</div>
 
 			</div>
@@ -174,14 +188,24 @@
 				</div>
 
 			</div><!-- .row -->
+	{% for project_item in project %}
+
+  
+				  {% endfor %}
+    
 
 			<div class="row">
 				{% for project in list_projects|slice:":2" %}
-					<div class="card col-xs-12 col-sm-5 col-md-5">
+				<div class="row">
+
+
+
+					<!-- displaying News articles -->
+    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 							<div class="grid wow zoomIn">
 
 								<figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
-									{% with 'Myprof/images/'|add:project.img_name as image_static %}
+									{% with 'Myprof/static/Myprof/images'|add:project.img_name as image_static %}
 											<img class="card-img-top" src="{% static image_static %}"></a>
 									{% endwith %}
 								</figure>
@@ -271,9 +295,9 @@
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<li><a href="https://www.linkedin.com/in/Dan Kabungo-266229129?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/Buttonupd" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="mailto:Dankariuki0101@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/dan-kabungo-03050a147?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin">LinkedIn</i></a></li>
+						<li><a href="https://github.com/Buttonupd" class="wow fadeInUp" data-wow-delay=".2s" target="_blank">GitHub<i class="fa fa-github"></i></a></li>
+						<li><a href="mailto:Dankariuki0101@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope">Email</i></a></li>
 						<!-- <li><a href="skype:moroshan777?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li> -->
 					</ul>
 
@@ -292,16 +316,16 @@
 
 	<!-- Javascript files -->
 
-	<script src="{% static 'Myprof/js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'Myprof/js/all.js' %}"></script>
 	<script src="{% static 'Myprof/bootstrap/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'Myprof/js/jquery.parallax-1.1.3.js' %}"></script>
-	<script src="{% static 'Myprof/js/imagesloaded.pkgd.js' %}"></script>
-	<script src="{% static 'Myprof/js/jquery.sticky.js' %}"></script>
-	<script src="{% static 'Myprof/js/smoothscroll.js' %}"></script>
-	<script src="{% static 'Myprof/js/wow.min.js' %}"></script>
-  <script src="{% static 'Myprof/js/waypoints.min.js' %}"></script>
-  <script src="{% static 'Myprof/js/jquery.cbpQTRotator.js' %}"></script>
-	<script src="{% static 'Myprof/js/custom.js' %}"></script>
+	<script src="{% static 'Myprof/js/fontawesome.js' %}"></script>
+	<script src="{% static 'Myprof/js/brands.min.js' %}"></script>
+	<script src="{% static 'Myprof/js/fontawesome.min.js' %}"></script>
+	<script src="{% static 'Myprof/js/all.min.js' %}"></script>
+	<script src="{% static 'Myprof/js/v4-shims.js' %}"></script>
+  	<script src="{% static 'Myprof/js/all.min.js' %}"></script>
+  	<script src="{% static 'Myprof/js/fontawesome.js' %}"></script>
+	<script src="{% static 'Myprof/js/fontawesome.js' %}"></script>
 
 </body>
 </html>

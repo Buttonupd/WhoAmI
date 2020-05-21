@@ -9,7 +9,7 @@ class Project(models.Model):
     url = models.URLField(max_length=200)
     tools = models.CharField(max_length=100) # space-separated values
     pub_date = models.DateTimeField()
-    img_name = models.CharField(max_length=100)
-
+    img_name = models.CharField(max_length=100, blank=True)
+    article_image = models.ImageField(upload_to = 'main/')
     def __str__(self):
         return self.title
