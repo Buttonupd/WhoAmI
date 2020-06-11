@@ -1,331 +1,315 @@
-
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109064262-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109064262-1"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-		gtag('config', 'UA-109064262-1');
-	</script>
+                gtag('config', 'UA-109064262-1');
+        </script>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio webpage">
-	<meta name="author" content="Dan Kariuki">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio webpage">
+        <meta name="author" content="Dan Kariuki">
 
-	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+        <link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-	<link rel="shortcut icon" href="{% static 'Myprof/images/logo.ico' %}" />
-	<title>Let's Develop </title>
+        <link rel="shortcut icon" href="{% static 'Myprof/images/logo.ico' %}" />
+        <title>Web Developer</title>
 
-	<!-- CSS -->
-	<link href="{% static 'Myprof/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
-	<link href="{% static 'Myprof/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
-	<link href="{% static 'Myprof/css/fontawesome.css" rel="stylesheet' %}">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.woff2">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.eot">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.eot">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.woff2">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.ttf">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.woff">
-	<!-- Custom styles CSS -->
-	<link href="{% static 'Myprof/css/style.css' %}" rel="stylesheet" media="screen">
+        <!-- CSS -->
+        <link href="{% static 'Myprof/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+        <link href="{% static 'Myprof/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+        <link href="{% static 'Myprof/css/animate.css" rel="stylesheet' %}">
 
-    <script src="{% static 'Myprof/js/all.min.js' %}"></script>
+        <!-- Custom styles CSS -->
+        <link href="{% static 'Myprof/css/style.css' %}" rel="stylesheet" media="screen">
+
+  
 
 </head>
 <body>
 
-	<!-- Preloader -->
+        <!-- Preloader -->
 
-	<div id="preloader">
-		<div id="status"></div>
-	</div>
+        <div id="preloader">
+                <div id="status"></div>
+        </div>
 
-	<!-- Home start -->
+        <!-- Home start -->
 
-	<section id="home" class="pfblock-image screen-height">
+        <section id="home" class="pfblock-image screen-height">
     <div class="home-overlay"></div>
-		<div class="intro" >
-			<img src=>
-			<div class="start">Hello, my name is Dan Kariuki and I am</div>
-			<h1>Full-Stack Web Developer</h1>
-			<div class="start">creating modern and responsive Web Application</div>
-		</div>
+                <div class="intro">
+                        <div class="start">Hello, my name is Dan Kariuki and I am</div>
+                        <h1>Full-Stack Web Developer</h1>
+                        <div class="start">creating modern and responsive Web Application</div>
+                </div>
 
-		<a href="#services">
-			<div class="scroll-down">
-				<span>
-					<i class="fa fa-angle-down fa-2x"></i>
-				</span>
-			</div>
-		</a>
-	</section>
+                <a href="#services">
+                        <div class="scroll-down">
+                                <span>
+                                        <i class="fa fa-angle-down fa-2x"></i>
+                                </span>
+                        </div>
+                </a>
+        </section>
 
-	<!-- Home end -->
+        <!-- Home end -->
 
-	<!-- Navigation start -->
+        <!-- Navigation start -->
 
-	<header class="header">
+        <header class="header">
 
-		<nav class="navbar navbar-custom" role="navigation">
+                <nav class="navbar navbar-custom" role="navigation">
 
-			<div class="container">
+                        <div class="container">
 
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Dan Kariuki</a>
-				</div>
+                                <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="index.html">Dan Kariuki</a>
+                                </div>
 
-				<div class="collapse navbar-collapse" id="custom-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#services">About me</a></li>
-            			<li><a href="#portfolio">Works</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
+                                <div class="collapse navbar-collapse" id="custom-collapse">
+                                        <ul class="nav navbar-nav navbar-right">
+                                                <li><a href="#home">Home</a></li>
+                                                <li><a href="#services">About me</a></li>
+            <li><a href="#portfolio">Works</a></li>
+                                                <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                </div>
 
-			</div>
+                        </div><!-- .container -->
 
-		</nav>
+                </nav>
 
-	</header>
+        </header>
 
-	<!-- Navigation end -->
+        <!-- Navigation end -->
 
 
   <!-- Services start -->
 
-	<section id="services" class="pfblock pfblock-gray">
-		<div class="container">
-			<div class="row">
+        <section id="services" class="pfblock pfblock-gray">
+                <div class="container">
+                        <div class="row">
 
-				<div class="col-sm-8">
+                                <div class="col-sm-8">
 
-					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">ABOUT ME</h2>
-						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-							<p>I enjoy building everything from small business sites and landing pages to portfolio themes and rich interactive web apps. I love creating visually stunning and responsive websites. I always try to combine aesthetic with functional aspects, looking for the right balance to communicate without annoying.</p>
-							<p>Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.</p>
-							<p>I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.</p>
+                                        <div class="pfblock-header wow fadeInUp">
+                                                <h2 class="pfblock-title">ABOUT ME</h2>
+                                                <div class="pfblock-line"></div>
+                                                <div class="pfblock-subtitle">
+                                                        <p>Building beautiful, interactive and creative applications is a part of the work ethics I have acquired as junior practioner in the web development framework. It has always been a principle to deliver on projects which are my full or partial responsibility, without proof of undermining the product.Whether small business sites, landing pages, or appliactions which require implementation of databases,such as Api Development and its consumption from another programming language with a different framework and libraries.</p>
+                                                        <p>Agile development, collaboration and team work fuel me not to let my groupdown by isolating individual ideas, to applying the concept of a growth mindset. I work well in groups, well alone and I am adaptive of the situation as long as I deliver.</p>
+                                                        <p>I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.</p>
 
- 							<!-- <a href="https://drive.google.com/file/d/0B4mqctkjXG0iclRXd2JJMGtYZFE/view?usp=sharing" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a> -->
-						</div>
-					</div>
+                                                       
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                        <div class="pfblock-header wow fadeInUp">
+                                                <img id="myphoto" src="{% static 'Myprof/images/me.jpg' %}" alt="Dan Kariuki" style="border-radius: 100%;filter:grayscale(30%);">
+                                        </div>
+                                </div>
+                </div><!-- .container -->
+
+                <div class="skills col-xs-12">
+                                <h2 class="pfblock-title">MY SKILLS</h2>
+                                <div class="pfblock-line"></div>
+
+                                <div class="row">
+                                        <div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
+                                        <div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
+                                        <div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
+                                        <div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
+                                        <div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
+                                </div>
+                                <div class="row"></div>
+                                        <div  class="devicon-python-plain   col-xs-15"><span>MACHINE LEARNING</span></div>
+                                        <div  class="devicon-nodejs-plain  col-xs-15"><span>NODE</span></div>
+                                        <div  class="devicon-python-plain  col-xs-15"><span>PYTHON</span></div>
+                                        <div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
+                                        <div  class="devicon-python-plain  col-xs-15"><span>FLASK</span></div>
 				</div>
-
-				<div class="col-sm-4">
-					<div class="pfblock-header wow fadeInUp">
-						<img id="myphoto" src="{% static 'Myprof/images/mann.jpg' %}" alt="Dan Kariuki" style="border-radius: 75%;filter:grayscale(30%);" width="150%" height="150%">
-					</div>
-				</div>
-		</div><!-- .container -->
-
-		<div class="skills col-xs-12">
-				<h2 class="pfblock-title">MY SKILLS</h2>
-				<div class="pfblock-line"></div>
-
+								
 				<div class="row">
-					<div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
-					<div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
-					<div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
-					<div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
-					<div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
-					
-				</div>
-				<div class="row">
-					<div  class="devicon-nodejs-plain  col-xs-15"><span>NODEJS</span></div>
-					<div  class="devicon-python-plain  col-xs-15"><span>PYTHON</span></div>
-					<div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
-					<div  class="devicon-python-plain  col-xs-15"><span>FLASK</span></div>
-					
-					
-				</div>
-				<div class="row">
-					<div  class="devicon-python-plain  col-xs-15"><span>MACHINE LEARNING</span></div>
-					<div  class="devicon-postgresql-plain  col-xs-15"><span>SQL/DATABASES</span></div>
-					<div  class="devicon-javascript-plain  col-xs-15"><span>ANGULARJS</span></div>
+					<div  class="devicon-postgresql-plain   col-xs-15"><span>SQL/DATABASES</span></div>
 					<div  class="devicon-javascript-plain  col-xs-15"><span>TYPESCRIPT</span></div>
+					<div  class="devicon-angularjs-plain  col-xs-15"><span>ANGULARJS</span></div>
+                                        <div  class="devicon-git-plain  col-xs-15"><span>VERSION CONTROL</span></div>
+                                        <div  class="devicon-linux-plain  col-xs-15"><span>LINUX</span></div>
+								
 				</div>
 
-			</div>
-		</div>
-	</section>
+                        </div>				
+                </div>
+        </section>
 
-	<!-- Services end -->
-
-
-	<!-- Portfolio start -->
-
-	<section id="portfolio" class="pfblock">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-sm-6 col-sm-offset-3">
-
-					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">My works</h2>
-						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-
-						</div>
-					</div>
-
-				</div>
-
-			</div><!-- .row -->
-	{% for project_item in project %}
-
-  
-				  {% endfor %}
-    
-
-			<div class="row">
-				{% for project in list_projects|slice:":2" %}
-				<div class="row">
+        <!-- Services end -->
 
 
+        <!-- Portfolio start -->
 
-					<!-- displaying News articles -->
-    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="grid wow zoomIn">
+        <section id="portfolio" class="pfblock">
+                <div class="container">
+                        <div class="row">
 
-								<figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
-									{% with 'Myprof/static/Myprof/images'|add:project.img_name as image_static %}
-											<img class="card-img-top" src="{% static image_static %}"></a>
-									{% endwith %}
-								</figure>
+                                <div class="col-sm-6 col-sm-offset-3">
 
-								<div class="card-block">
-									<h2 class="card-title">{{ project.title }}</h2>
-									<p class="card-text">{{ project.description }}</p>
-									<div class="tools">
-										{% for tool in project.tools.split %}
-											<span>{{ tool }}</span>
-										{% endfor %}
-									</div>
-								</div>
+                                        <div class="pfblock-header wow fadeInUp">
+                                                <h2 class="pfblock-title">My works</h2>
+                                                <div class="pfblock-line"></div>
+                                                <div class="pfblock-subtitle">
 
-							</div>
-						</div>
-					{% endfor %}
-				</div>
-		</div><!-- .contaier -->
+                                                </div>
+                                        </div>
 
-	</section>
+                                </div>
 
-	<!-- Portfolio end -->
+                        </div><!-- .row -->
 
+                        <div class="row">
+                                {% for project in list_projects|slice:":2" %}
+                                        <div class="card col-xs-12 col-sm-5 col-md-5">
+                                                        <div class="grid wow zoomIn">
 
-	<!-- CallToAction start -->
+                                                                <figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
+                                                                        {% with 'Myprof/images/'|add:project.img_name as image_static %}
+                                                                                        <img class="card-img-top" src="{% static image_static %}"></a>
+                                                                        {% endwith %}
+                                                                </figure>
 
-	<section class="calltoaction">
-		<div class="container-fluid">
+                                                                <div class="card-block">
+                                                                        <h2 class="card-title">{{ project.title }}</h2>
+                                                                        <p class="card-text">{{ project.description }}</p>
+                                                                        <div class="tools">
+                                                                                {% for tool in project.tools.split %}
+                                                                                        <span>{{ tool }}</span>
+                                                                                {% endfor %}
+                                                                        </div>
+                                                                </div>
 
-			<div class="row">
+                                                        </div>
+                                                </div>
+                                        {% endfor %}
+                                </div>
+                </div><!-- .contaier -->
 
-				<div class="col-md-12 col-lg-12">
-					<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
-					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-						I'm available for freelance contracts, so get in touch:
-					</div>
-				</div>
+        </section>
 
-				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-					<a href="#contact" class="btn btn-lg">Hire Me</a>
-				</div>
-
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</section>
-
-	<!-- CallToAction end -->
+        <!-- Portfolio end -->
 
 
-	<!-- Contact start -->
+        <!-- CallToAction start -->
 
-	<section id="contact" class="pfblock">
-		<div class="row">
+        <section class="calltoaction">
+                <div class="container-fluid">
 
-			<div class="col-sm-6 col-sm-offset-3">
+                        <div class="row">
 
-				<div class="pfblock-header">
-					<h2 class="pfblock-title">Contact</h2>
-					<div class="pfblock-line"></div>
-					<div class="pfblock-subtitle">
-						I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it. After you introduce yourself and your project, I'll get it touch with you to schedule a time to chat.
-					</div>
-				</div>
+                                <div class="col-md-12 col-lg-12">
+                                        <h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
+                                        <div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+                                                I'm available for freelance contracts, so get in touch:
+                                        </div>
+                                </div>
 
-			</div>
+                                <div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+                                        <a href="#contact" class="btn btn-lg">Hire Me</a>
+                                </div>
 
-		</div><!-- .row -->
+                        </div><!-- .row -->
+                </div><!-- .container -->
+        </section>
 
-		<div class="row">
-
-			<div class="col-sm-6 col-sm-offset-3">
-				{% include 'Myprof/contact_form.html' %}
-			</div><!-- .row -->
-
-		</div><!-- .container -->
-	</section>
-
-	<!-- Contact end -->
-
-	<!-- Footer start -->
-
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-sm-12">
-
-					<ul class="social-links">
-						<li><a href="https://www.linkedin.com/in/dan-kabungo-03050a147?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin">LinkedIn</i></a></li>
-						<li><a href="https://github.com/Buttonupd" class="wow fadeInUp" data-wow-delay=".2s" target="_blank">GitHub<i class="fa fa-github"></i></a></li>
-						<li><a href="mailto:Dankariuki0101@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope">Email</i></a></li>
-						<!-- <li><a href="skype:moroshan777?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li> -->
-					</ul>
-
-					<p class="copyright"> Feel free to email me, or visit my GitHub and LinkedIn pages.</p>
-
-					<p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> Kenya 2020 ©</p>
-
-				</div>
-
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</footer>
-
-	<!-- Footer end -->
+        <!-- CallToAction end -->
 
 
-	<!-- Javascript files -->
+        <!-- Contact start -->
 
-	<script src="{% static 'Myprof/js/all.js' %}"></script>
-	<script src="{% static 'Myprof/bootstrap/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'Myprof/js/fontawesome.js' %}"></script>
-	<script src="{% static 'Myprof/js/brands.min.js' %}"></script>
-	<script src="{% static 'Myprof/js/fontawesome.min.js' %}"></script>
-	<script src="{% static 'Myprof/js/all.min.js' %}"></script>
-	<script src="{% static 'Myprof/js/v4-shims.js' %}"></script>
-  	<script src="{% static 'Myprof/js/all.min.js' %}"></script>
-  	<script src="{% static 'Myprof/js/fontawesome.js' %}"></script>
-	<script src="{% static 'Myprof/js/fontawesome.js' %}"></script>
+        <section id="contact" class="pfblock">
+                <div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+
+                                <div class="pfblock-header">
+                                        <h2 class="pfblock-title">Contact</h2>
+                                        <div class="pfblock-line"></div>
+                                        <div class="pfblock-subtitle">
+                                                I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it. After you introduce yourself and your project, I'll get it touch with you to schedule a time to chat.
+                                        </div>
+                                </div>
+
+                        </div>
+
+                </div><!-- .row -->
+
+                <div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+                                {% include 'Myprof/contact_form.html' %}
+                        </div><!-- .row -->
+
+                </div><!-- .container -->
+        </section>
+
+        <!-- Contact end -->
+
+        <!-- Footer start -->
+
+        <footer id="footer">
+                <div class="container">
+                        <div class="row">
+
+                                <div class="col-sm-12">
+
+                                        <ul class="social-links">
+                                                <!-- <li><a href="https://www.linkedin.com/in/vlad-moroshan-266229129?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li> -->
+                                                <li><a href="https://github.com/Buttonupd" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
+                                                <li><a href="mailto:Dankariuki0101@gmaiol.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
+                                              
+                                        </ul>
+
+                                        <p class="copyright"> Feel free to email me, or visit my GitHub and LinkedIn pages.</p>
+
+                                        <p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> Kenya 2020 ©</p>
+
+                                </div>
+
+                        </div><!-- .row -->
+                </div><!-- .container -->
+        </footer>
+
+        <!-- Footer end -->
+
+
+        <!-- Javascript files -->
+
+        <script src="{% static 'Myprof/js/jquery-1.11.1.min.js' %}"></script>
+        <script src="{% static 'Myprof/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'Myprof/js/jquery.parallax-1.1.3.js' %}"></script>
+        <script src="{% static 'Myprof/js/imagesloaded.pkgd.js' %}"></script>
+        <script src="{% static 'Myprof/js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'Myprof/js/smoothscroll.js' %}"></script>
+        <script src="{% static 'Myprof/js/wow.min.js' %}"></script>
+  <script src="{% static 'Myprof/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'Myprof/js/jquery.cbpQTRotator.js' %}"></script>
+        <script src="{% static 'Myprof/js/custom.js' %}"></script>
 
 </body>
 </html>

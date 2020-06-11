@@ -1,15 +1,14 @@
 
+
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
 	overflow-x: hidden;
-	background-color: #111;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
-	float: left;
 }
 
 a {
@@ -29,6 +28,12 @@ a:hover {
     width: 20%;
     float: left;
 }
+
+/* ---------------------------------------------- /*
+ * Transition elsements
+/* ---------------------------------------------- */
+
+
 .navbar a,
 .form-control {
 	-webkit-transition: all 0.4s ease-in-out 0s;
@@ -47,6 +52,9 @@ a,
 			transition: all 0.125s ease-in-out 0s;
 }
 
+/* ---------------------------------------------- /*
+ * Reset box-shadow
+/* ---------------------------------------------- */
 
 .btn,
 .form-control,
@@ -56,6 +64,10 @@ a,
 	-webkit-box-shadow: none;
 			box-shadow: none;
 }
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 Raleway, sans-serif;
@@ -93,6 +105,9 @@ h6 {
 	font-weight: 400;
 }
 
+/* ---------------------------------------------- /*
+ * Reset border-radius
+/* ---------------------------------------------- */
 
 .btn,
 .iconbox,
@@ -108,6 +123,10 @@ h6 {
 }
 
 
+/* ---------------------------------------------- /*
+ * Input-group
+/* ---------------------------------------------- */
+
 .input-group .form-control {
 	z-index: auto;
 }
@@ -119,6 +138,9 @@ h6 {
 	font-weight: 700;
 }
 
+/* ---------------------------------------------- /*
+ * Inputs styles
+/* ---------------------------------------------- */
 
 .form-control {
 	background: #FFF;
@@ -144,8 +166,12 @@ h6 {
 }
 
 input:nth-child(3n){
-    height: 500px;
+    height: 500px%;
 }
+
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
 
 .btn {
 	font-family: Raleway, sans-serif;
@@ -198,7 +224,9 @@ input:nth-child(3n){
 	margin-left: 6px;
 }
 
-
+/* ---------------------------------------------- /*
+ * General Styles
+/* ---------------------------------------------- */
 
 .pfblock {
 	padding: 120px 0 100px;
@@ -315,7 +343,7 @@ div[class^="devicon"] span{
     text-align: center;
 }
 .calltoaction {
-    background: url(../images/pexels-photo-206359.jpeg);
+    background: url(../images/action.jpg);
 	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -358,9 +386,12 @@ div[class^="devicon"] span{
 	margin-bottom: 40px;
 }
 
+/* ---------------------------------------------- /*
+ * Home
+/* ---------------------------------------------- */
 
 #home {
-	background: url(../images/original.jpg);
+	background: url(../images/cover.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -374,7 +405,7 @@ div[class^="devicon"] span{
 
 .home-overlay {
     background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("../images/UreddStill_01.jpg");
+    background-image: url("../images/pattern.png");
     background-repeat: repeat;
     height: 100%;
     left: 0;
@@ -411,9 +442,17 @@ div[class^="devicon"] span{
 }
 
 
+/* ---------------------------------------------- /*
+ * Contact
+/* ---------------------------------------------- */
+
 .ajax-response {
 	text-align: center;
 }
+
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
 
 #footer {
 	background: #222;
@@ -438,7 +477,7 @@ div[class^="devicon"] span{
 
 .social-links {
 	list-style: none;
-	padding: 10;
+	padding: 0;
 	margin: 0 0 20px;
 }
 
@@ -466,6 +505,9 @@ div[class^="devicon"] span{
 	color: rgba(255, 255, 255, .8);
 }
 
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
 
 .header {
 	border-bottom: 1px solid #f5f5f5;
@@ -531,6 +573,9 @@ div[class^="devicon"] span{
 	background: #222;
 }
 
+/* ---------------------------------------------- /*
+ * Scroll to top
+/* ---------------------------------------------- */
 
 .scroll-up {
 	position: fixed;
@@ -556,6 +601,10 @@ div[class^="devicon"] span{
 	background-color: rgba(235, 235, 235, .8);
 	color: #e7746f;
 }
+
+/* ---------------------------------------------- /*
+ *Scroll Down
+/* ---------------------------------------------- */
 
 .scroll-down {
 	position: absolute;
@@ -600,6 +649,20 @@ div[class^="devicon"] span{
 	100% { top:25px; opacity: 0;}
 }
 
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+	background: #FFF;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
 #status {
 	background-image: url(../images/preloader.gif);
 	background-position: center;
@@ -612,6 +675,9 @@ div[class^="devicon"] span{
 	width: 200px;
 }
 
+/* ---------------------------------------------- /*
+ * Media
+/* ---------------------------------------------- */
 
 @media (max-width: 767px) {
 
@@ -637,7 +703,9 @@ div[class^="devicon"] span{
 }
 
 
-
+/*--------------------------------*/
+/***** Portfolio Common style *****/
+/*--------------------------------*/
 
 .card {
 	padding: 0px 10px 0px 5px;
@@ -700,6 +768,14 @@ div[class^="devicon"] span{
 	background-color: #999;
 }
 
+
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
 
 figure.effect-bubba img {
 	opacity: 0.7;
@@ -769,10 +845,10 @@ figure.effect-bubba:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
 #myphoto {
 	margin-top: 10vh;
 	border-radius: 100%;
 	filter: grayscale(30%);
 	width: 300px;
-	float: left;
 }
