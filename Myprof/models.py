@@ -10,6 +10,5 @@ class Project(models.Model):
     tools = models.CharField(max_length=100) # space-separated values
     pub_date = models.DateTimeField()
     img_name = models.CharField(max_length=100, blank=True)
-    article_image = models.ImageField(upload_to = 'main/')
     def __str__(self):
         return self.title

@@ -166,7 +166,7 @@ h6 {
 }
 
 input:nth-child(3n){
-    height: 500px%;
+    height: 500 px ;
 }
 
 /* ---------------------------------------------- /*
@@ -343,7 +343,7 @@ div[class^="devicon"] span{
     text-align: center;
 }
 .calltoaction {
-    background: url(../images/action.jpg);
+    background: url(../images/quotes.jpeg);
 	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0 0;
